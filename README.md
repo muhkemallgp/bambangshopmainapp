@@ -84,5 +84,10 @@ This is the place for you to write reflections:
 3. Dalam pemrograman Rust, kepatuhan yang ketat dari kompiler memastikan program thread-safe. Pada kasus variabel statis Daftar Pelanggan (SUBSCRIBERS), DashMap digunakan untuk memastikan keamanan penggunaan HashMap oleh thread. Pertimbangkan apakah DashMap masih diperlukan atau pola Singleton dapat digunakan sebagai alternatif.
 
 #### Reflection Publisher-2
+1. Dalam pola MVC, di mana Model mencakup penyimpanan data dan logika bisnis, pemisahan antara "Service" dan "Repository" diperlukan untuk mematuhi prinsip tanggung jawab tunggal. Ini memungkinkan isolasi tanggung jawab yang berbeda, dengan "Service" menangani logika aplikasi dan "Repository" mengelola akses data. Pemisahan ini meningkatkan modularitas dan mempermudah pengembangan dan pemeliharaan kode.
+
+2. Jika hanya menggunakan Model tanpa lapisan lain, program akan memiliki keterikatan yang tinggi. Ini berarti jika terjadi perubahan, banyak penyesuaian yang harus dilakukan dalam kode. Intinya, penggunaan Model tanpa lapisan lain akan meningkatkan kompleksitas kode karena ketergantungan erat antara mereka, menyebabkan perubahan dalam satu dapat berdampak luas pada yang lain.
+
+3. Saya telah memperdalam pemahaman saya tentang Postman, alat yang sangat membantu dalam menguji aplikasi yang dibuat. Dengan Postman, saya dapat memastikan bahwa respons aplikasi sesuai dengan harapan berdasarkan permintaan yang saya buat. Saya juga dapat menyesuaikan metode yang diperlukan, seperti CRUD, untuk memverifikasi keakuratan data. Beberapa fitur yang saya temukan berguna termasuk kemampuan untuk mengatur dan menyimpan koleksi permintaan HTTP, mengotomatisasi pengujian dengan skrip, serta menyediakan lingkungan yang terisolasi untuk menguji integrasi dengan API eksternal. Saya juga mengapresiasi fitur pengujian otomatis yang memungkinkan saya untuk menjalankan serangkaian tes secara berkala untuk memastikan konsistensi dan kualitas aplikasi.
 
 #### Reflection Publisher-3
